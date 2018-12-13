@@ -60,7 +60,7 @@ int  $0x80
 #
 # RETURNS: the maximum value in retval
 #
-# MODIFIES: %eax, %ebx, %ecx
+# MODIFIES: %eax, %ebx
 #
 #           %eax: holds a pointer to the data items in memory
 #           %ebx: temporary storage for the actual data item
