@@ -1,0 +1,10 @@
+Alternative calling convention:
+        - the parameters are passed in registers (eax, ebx, ecx, edx, edi and esi are used in this particular order)
+        - the number of the parameters cannot exceed 6 for each function
+        - values are returned in a global variable (named retval, by default 0)
+
+Obviously, this is a calling convention not using the stack. All the parameters are passed in registers, and the return value is stored in a memory variable.
+The limitation is the number of the parameters (but memory pointers can still be used).
+If a separate register was used to store the return value, it would further limit the number of parameters.
+
+Assembly programs using this convention are named using the "c_" prefix in their source, object and executable file names.
