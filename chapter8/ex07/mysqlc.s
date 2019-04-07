@@ -2,7 +2,7 @@
 # It prints the library version.
 # Creates a database.
 # Creates a table.
-# Insert 3 records.
+# Inserts 3 records.
 # Query the records and print them to STDOUT.
 
 .section .data
