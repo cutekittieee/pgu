@@ -3,7 +3,7 @@
 # Creates a database.
 # Creates a table.
 # Inserts 3 records.
-# Query the records and print them to STDOUT.
+# Queries the records and prints them to STDOUT.
 
 .section .data
 version:
