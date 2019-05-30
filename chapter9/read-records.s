@@ -30,6 +30,7 @@ call allocate_init
 #Allocate memory for the record buffer
 pushl $RECORD_SIZE
 call  allocate
+addl  $4, %esp
 movl  %eax, record_buffer_ptr
 
 #Open the file
@@ -88,6 +89,7 @@ finished_reading:
 #Deallocate the buffer
 pushl  record_buffer_ptr
 call   deallocate
+addl   $4, %esp
 
 #Exit the program
 movl   $SYS_EXIT, %eax
