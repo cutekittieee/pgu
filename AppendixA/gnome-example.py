@@ -21,7 +21,7 @@ def delete_handler(window, event):
   return 0
 
 def click_handler(event):
-#Create the "Are you sure" dialog
+  #Create the "Are you sure" dialog
   msgbox = gnome.ui.GnomeMessageBox(
   "Are you sure you want to quit?",
   gnome.ui.MESSAGE_BOX_QUESTION,
